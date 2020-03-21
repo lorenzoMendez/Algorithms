@@ -1,12 +1,7 @@
-import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
-import com.lorenzo.implement.BinarySearch;
-import com.lorenzo.implement.BubbleSort;
-import com.lorenzo.implement.InsertionSort;
-
-import Recursion.Add;
+import com.lorenzo.implement.Algorithms;
 
 public class Main {
 	
@@ -30,7 +25,7 @@ public class Main {
 //		print( Arrays.asList( total ) );
 		
 		List<Integer> list = Arrays.asList( 23, 67, 82, 99, 1, 6, 9, 3, 7, 10, 4, 8, 5, 2 );
-		InsertionSort.insertionSort(list);
+		Algorithms.insertionSort(list);
 		print( list );
 	}
 	
