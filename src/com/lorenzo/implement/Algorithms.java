@@ -4,6 +4,10 @@ import java.util.List;
 
 public class Algorithms {
 	
+	/*
+	 * Return the position where the item found, or else -1
+	 * 
+	 * */
 	public static int binarySearch( List<Integer> list, Integer item ) {
 		int low = 0;
 		int top = list.size() - 1;
@@ -20,6 +24,10 @@ public class Algorithms {
 		return -1;
 	}
 	
+	/*
+	 * Sort the Array
+	 * 
+	 * */
 	public static void bubbleSort( List<Integer> list ) {
 		for( int i = 0; i < list.size() ; ++i ) {
 			for( int j = 0; j < list.size() - 1 - i; ++j ) {
@@ -32,6 +40,10 @@ public class Algorithms {
 		}
 	}
 	
+	/*
+	 * Sort the Array
+	 * 
+	 * */
 	public static void insertionSort( List<Integer> list ) {
 		for( int i = 1; i < list.size(); ++i ) {
 			int key = list.get( i );

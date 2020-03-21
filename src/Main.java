@@ -1,7 +1,8 @@
+import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
-
 import com.lorenzo.implement.Algorithms;
+import Recursion.Add;
 
 public class Main {
 	
@@ -13,9 +14,9 @@ public class Main {
 //		
 //		List<Integer> list = Arrays.asList( 23, 67, 82, 99, 1, 6, 9, 3, 7, 10, 4, 8, 5, 2 );
 //		print( list );
-//		BubbleSort.bubbleSort( list );
+//		Algorithms.bubbleSort( list );
 //		
-//		int position = BinarySearch.binarySearch( bigList, 10 );
+//		int position = Algorithms.binarySearch( bigList, 10 );
 //		System.out.println( position != -1 ? "Encotrado en la posicion: " + position : "Elemento No encontrado" );
 //		print( list );
 //		
