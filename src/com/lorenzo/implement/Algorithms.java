@@ -1,5 +1,6 @@
 package com.lorenzo.implement;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class Algorithms {
@@ -42,18 +43,31 @@ public class Algorithms {
 	
 	/*
 	 * Sort the Array
+	 * Worst case O(n^2)
+	 * Best case O(n), the list is in order
 	 * 
 	 * */
 	public static void insertionSort( List<Integer> list ) {
 		for( int i = 1; i < list.size(); ++i ) {
 			int key = list.get( i );
 			int j = i - 1;
+			
 			while( j >= 0 && list.get( j ) > key ) {
 				list.set( j + 1, list.get( j ) );
 				--j;
 			}
-			list.set( j + 1, key );
+			
+			list.set( j + 1 , key );
 		}
 	}
-
+	
+	public void mergeSort( List<Integer> list, int p, int q, int r ) {
+		int n1 = q - p + 1;
+		int n2 = r - q;
+		List<Integer> left = new ArrayList<>( n1 );
+		List<Integer> right = new ArrayList<>( n2 );
+		
+//		for( int i = 0; i < n1; ++i )
+//			left[ i ] = list.get( p + i );
+	}
 }
