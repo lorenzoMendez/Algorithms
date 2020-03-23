@@ -1,4 +1,4 @@
-package Recursion;
+package com.lorenzo.recursion;
 
 import java.util.List;
 

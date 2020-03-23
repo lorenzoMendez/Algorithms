@@ -61,7 +61,17 @@ public class Algorithms {
 		}
 	}
 	
-	public void mergeSort( List<Integer> list, int p, int q, int r ) {
+	public void test() {
+		test2();
+		System.out.println( "Metodo no estatico." );
+	}
+	
+	public static void test2() {
+		// this.test();				Error en tiempo de compilacion  
+		System.out.println( "Metodo estatico." );
+	}
+	
+	public static void mergeSort( List<Integer> list, int p, int q, int r ) {
 		int n1 = q - p + 1;
 		int n2 = r - q;
 		List<Integer> left = new ArrayList<>( n1 );
