@@ -10,8 +10,7 @@ import com.lorenzo.recursion.Add;
 public class Main {
 	
 	public static void main( String[] args ) {
-		
-		comparatorTest();
+		sortTest();
 	}
 	
 	public static void comparatorTest() {
@@ -54,24 +53,16 @@ public class Main {
 		System.out.println( position != -1 ? "Encontrado en la posicion: " + position : "Elemento No encontrado" );
 		print( list );
 		
-		System.out.println( "RECURSIVE ADDING" );
-		int sum = Add.sum( 100 );
-		print( Arrays.asList( sum ) );
-		int total = Add.sumList( list, list.size() - 1 );
-		print( Arrays.asList( total ) );
-		
 		System.out.println( "INSERTION SORT" );
-		List<Integer> list2 = Arrays.asList( 99, 98, 82, 23, 1, 6, 9 );
+		List<Integer> list2 = Arrays.asList( 99, 98, 82, 23, 1, 6, 9, 83, 10, 5, 8, 2 );
 		Algorithms.insertionSort( list2 );
 		print( list2 );
 		
-		String str = "PEPE";
-		test( str );
-		System.out.println( str );
+		System.out.println( "MERGE SORT" );
+		List<Integer> list3 = Arrays.asList( 99, 98, 82, 23, 1, 6, 9, 83, 10, 5, 8, 2 );
+		Algorithms.mergeSort( list3, 0, list3.size() - 1 );
+		print( list3 );
 		
-		Integer integer = 1;
-		test( integer );
-		System.out.println( integer );
 	}
 	
 	public static void print( List<Integer> list ) {
